@@ -28,11 +28,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+
+  *The difference between the two are the scope of the functions. The first example is block scoped. * 
   
   2. Which of the two uses a closure? How can you tell?
+
+  * The second example uses closure. It takes information from its parent outside of the function.  
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+
+  * One reason to alter the scope of the function is for data privacy. Some companies want the more security and there for inmplement systems in their coding. One reason you would not want closure and you would want a global variable is information being taken from outside. 
 */
 
 // counter1 code
@@ -61,7 +67,8 @@ Use the inning function below to do the following:
   For example: invoking inning() should return a numerical score value of 0, 1, or 2
 */
 
-function inning(/*Code Here*/){
+function inning(){
+  return Math.floor(Math.random() * Math.floor(3));
 
     /*Code Here*/
 
