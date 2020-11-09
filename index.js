@@ -94,9 +94,9 @@ function finalScore(){
 
    for (let i=0; i<9; i++){
      const current = inning
-     home = home + current.home 
-     away = away + current.away
-     total.push(`"Home":${current.home}, "Away":${current.away}`);
+     home = home + current.Home
+     away = away + current.Away
+     total.push(`Home: ${current.Home}, Away: ${current.Away} `);
    }
    return finalScore
 }
