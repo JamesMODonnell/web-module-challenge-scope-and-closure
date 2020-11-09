@@ -87,11 +87,20 @@ For example: invoking finalScore(inning, 9) might return this object:
 }
 */ 
 
-function finalScore(/*code Here*/){
+function finalScore(){
+   const total = []
+   let home = 0;
+   let away =0;
 
-  /*Code Here*/
-
+   for (let i=0; i<9; i++){
+     const current = inning
+     home = home + current.home 
+     away = away + current.away
+     total.push(`"Home":${current.home}, "Away":${current.away}`);
+   }
+   return finalScore
 }
+console.log(finalScore(inning , 9))
 
 /* Task 4: 
 // create a function called getInningScore 
